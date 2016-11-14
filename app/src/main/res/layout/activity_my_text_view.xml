@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp"
+    tools:context="com.huawei.develop.viewdraghelperdemo.ui.activity.MyTextViewActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="this is a textView"
+        android:textColor="#e96e6e"
+        android:textSize="20sp"/>
+
+    <!--
+            ellipsize:以跑马灯形式显示
+            marqueeRepeatLimit:设置重复滚动的次数
+    -->
+    <com.huawei.develop.viewdraghelperdemo.ui.view.MyTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ellipsize="marquee"
+        android:focusableInTouchMode="true"
+        android:singleLine="true"
+        android:text="这是一个自定义的TextView,重写了isFocuable方法,返回true,上周，谷歌正式发布了两款新旗舰Pixel和Pixel XL，该机最大特点就是全球首发预装了Android 7.1操作系统。
+        相对于LG V20首发的Android 7.0，Android 7.1主要是对其进行了进一步的提升，但代号依然不变仍为牛轧糖。
+        日前，谷歌就正式发布了Android 7.1的首个开发者预览版本，并称将于年底推出正式版本。"
+        android:textSize="20sp"
+        android:textColor="#0090ff"/>
+
+    <!--开源控件ExpandableTextView-->
+    <com.ms.square.android.expandabletextview.ExpandableTextView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:expandableTextView="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/expand_text_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        expandableTextView:animDuration="200"
+        expandableTextView:maxCollapsedLines="3">
+
+        <TextView
+            android:id="@id/expandable_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:textColor="#666666"
+            android:textSize="16sp"/>
+
+        <ImageButton
+            android:id="@id/expand_collapse"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|bottom"
+            android:background="@android:color/transparent"
+            android:padding="16dp"/>
+    </com.ms.square.android.expandabletextview.ExpandableTextView>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:text="单个应用可分配最大内存为: "
+            android:textSize="16sp"/>
+        <TextView
+            android:id="@+id/tv_maxMemory"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            />
+    </LinearLayout>
+
+    <com.hanks.htextview.HTextView
+        xmlns:htext="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/htext"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="@android:color/transparent"
+        android:gravity="center"
+        android:textColor="#FFFFFF"
+        android:textSize="30sp"
+        htext:animateType="rainbow"
+         />
+</LinearLayout>

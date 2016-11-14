@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingLeft="10dp"
+    tools:context=".ui.activity.MainActivity">
+
+    <FrameLayout
+        android:id="@+id/fl_pager"
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+      >
+    </FrameLayout>
+    <android.support.v4.app.FragmentTabHost
+        android:background="#0f0"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="5dp"
+        android:id="@+id/ft_tabhost"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+    </android.support.v4.app.FragmentTabHost>
+</RelativeLayout>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+              android:padding="10dp">
+
+<!--点击进入textview特效的activity-->
+    <Button
+        android:id="@+id/btn_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"/>
+    <Button
+        android:id="@+id/btn_imageview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ImageView"/>
+    <Button
+        android:id="@+id/btn_video"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="播放视频"/>
+    <Button
+        android:id="@+id/getScreenSize"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="获取屏幕宽度和高度"/>
+    <Button
+        android:id="@+id/btn_sentBadgeNum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="发送数字提醒"/>
+    <Button
+        android:id="@+id/btn_navigationbar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="navigationbar"/>
+    <Button
+        android:id="@+id/btn_systembroswer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="调用系统浏览器打开qq.com"/>
+    <Button
+        android:id="@+id/btn_qqbroswer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="调用qq浏览器打开qq.com"/>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"/>
+</LinearLayout>
