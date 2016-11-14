@@ -57,6 +57,7 @@ public class HomeFragment extends Fragment implements View.OnClickListener {
         Button btn_navigationbar = (Button) rootView.findViewById(R.id.btn_navigationbar);
         Button btn_systembroswer = (Button) rootView.findViewById(R.id.btn_systembroswer);
         Button btn_qqbroswer = (Button) rootView.findViewById(R.id.btn_qqbroswer);
+        Button btn_toast = (Button) rootView.findViewById(R.id.btn_toast);
         btn_text.setOnClickListener(this);
         btn_video.setOnClickListener(this);
         getScreenSize.setOnClickListener(this);
@@ -64,6 +65,7 @@ public class HomeFragment extends Fragment implements View.OnClickListener {
         btn_navigationbar.setOnClickListener(this);
         btn_systembroswer.setOnClickListener(this);
         btn_qqbroswer.setOnClickListener(this);
+        btn_toast.setOnClickListener(this);
     }
 
 
@@ -96,6 +98,9 @@ public class HomeFragment extends Fragment implements View.OnClickListener {
                 break;
             case R.id.btn_qqbroswer:
                 startBroswer(1);
+                break;
+            case R.id.btn_toast:
+                Toast.makeText(getContext(),"hello",Toast.LENGTH_SHORT).show();
                 break;
         }
     }
